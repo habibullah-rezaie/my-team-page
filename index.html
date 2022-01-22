@@ -41,12 +41,19 @@
       gap: .5rem;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(7, .5fr);
-      justify-items: center;
     }
 
     .team-members li {
       list-style: none;
       grid-row: span 2;
+    }
+
+    .sm-first-col {
+      justify-self: start;
+    }
+
+    .sm-second-col {
+      justify-self: end;
     }
 
     .lower {
@@ -111,7 +118,7 @@
   <main>
 
     <ul class="team-members">
-      <li>
+      <li class="sm-first-col lg-first-col">
 
         <figure><img src="./photo1.png" alt="Bill Mahoney - Product Owner">
           <figcaption>
@@ -120,7 +127,7 @@
           </figcaption>
         </figure class="mobile-lower">
       </li>
-      <li class="lower pc-lower">
+      <li class="sm-second-col lg-second-col lower pc-lower">
         <figure><img src="./photo2.png" alt="Saba Cabrera - Art Director">
           <figcaption>
             <h3 class="member-name">Saba Cabrera</h3>
@@ -128,7 +135,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li class="sm-first-col lg-third-col">
 
         <figure><img src="./photo3.png" alt="Shae Le - Tech Lead">
           <figcaption>
@@ -137,7 +144,7 @@
           </figcaption>
         </figure>
       </li>
-      <li class="lower">
+      <li class="sm-second-col lg-first-col lower">
 
         <figure><img src="./photo4.png" alt="Skylah Lu - UX Designer">
           <figcaption>
@@ -148,7 +155,7 @@
       </li>
 
 
-      <li>
+      <li class="sm-first-col lg-second-col">
 
         <figure class="pc-lower"><img src="./photo5.png" alt="Griff Richards - Developer">
           <figcaption>
@@ -158,7 +165,7 @@
         </figure>
       </li>
 
-      <li class="lower">
+      <li class="sm-second-col lg-third-col lower">
         <figure><img src="./photo6.png" alt="Stan John - Developer">
           <figcaption>
             <h3 class="member-name">Stan John</h3>
