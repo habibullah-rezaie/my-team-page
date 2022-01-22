@@ -15,7 +15,88 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Serif:wght@700&family=Poppins:wght@400;700&display=swap"
     rel="stylesheet">
-
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+  
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin-left: .85rem;
+        margin-right: .85rem;
+        margin-top: 4.5rem;
+        font-size: 14px;
+      }
+  
+      header h1 {
+        font-size: 2.25rem;
+        font-family: 'PT Serif', serif;
+      }
+  
+  
+      .team-members {
+        padding: 0;
+        margin-top: 2rem;
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(7, .5fr);
+        justify-items: center;
+      }
+  
+      .team-members li {
+        list-style: none;
+        grid-row: span 2;
+      }
+  
+      .lower {
+        transform: translateY(1.9rem);
+      }
+  
+      figure {
+        position: relative;
+        width: fit-content;
+        margin: 0;
+      }
+  
+      figure img {
+        width: 9rem;
+      }
+  
+      .role {
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        text-transform: uppercase;
+        writing-mode: vertical-lr;
+        margin-right: 0;
+        margin-left: .25rem;
+        font-size: .71rem;
+        font-family: 'PT Serif', serif;
+      }
+  
+      .member-name {
+        margin: 0;
+      }
+  
+      footer {
+        font-size: .875rem;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        color: #A9A9A9;
+      }
+  
+      footer a,
+      footer a:active {
+        color: #A9A9A9;
+      }
+  
+      a.username {
+        font-weight: bold;
+      }
+  
+      
+    </style>
 
   <title>My Team Page</title>
 </head>
