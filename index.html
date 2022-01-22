@@ -101,6 +101,58 @@
     a.username {
       font-weight: bold;
     }
+
+    @media screen and (min-width: 1024px) {
+      body {
+        font-size: 18px;
+        margin: 5.5rem 8rem;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .lg-first-col {
+        justify-self: start;
+      }
+
+      .lg-second-col {
+        justify-self: center;
+      }
+
+      .lg-third-col {
+        justify-self: end;
+      }
+
+      .team-description {
+        width: 31rem;
+      }
+
+      .team-members {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, .5fr);
+        row-gap: 1.5rem;
+      }
+
+      figure img {
+        width: 13rem;
+      }
+
+      .lower {
+        transform: none;
+      }
+
+      .pc-lower {
+        transform: translateY(2rem);
+      }
+
+      .member-name {
+        font-size: 1.10rem;
+      }
+
+
+    }
   </style>
 
   <title>My Team Page</title>
